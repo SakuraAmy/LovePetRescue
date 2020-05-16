@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "6107339385",
+    "firebase_url": "https://lovepetrescue-ec5a2.firebaseio.com",
+    "project_id": "lovepetrescue-ec5a2",
+    "storage_bucket": "lovepetrescue-ec5a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:6107339385:android:87e3e2573e29b86b9692a8",
+        "android_client_info": {
+          "package_name": "com.example.lovepetrescue"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "6107339385-56etq3ueepcpcg33nb58h7s7e9qgjd4o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWe6KW4uVNLvD7OuUAZket0nVzs_QTuwc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "6107339385-56etq3ueepcpcg33nb58h7s7e9qgjd4o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLightPink"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/petImageView"
+            android:layout_width="346dp"
+            android:layout_height="244dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="@string/contentResPet"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/petNameTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars[2]" />
+
+        <TextView
+            android:id="@+id/petNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="50dp"
+            android:gravity="center"
+            android:text="@string/namePlaceHolder"
+            android:textColor="@color/colorTeal"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/petImageView" />
+
+        <Button
+            android:id="@+id/adoptThatBoi"
+            android:layout_width="137dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/adoptThatBoi"
+            android:textSize="18sp"
+            android:visibility="visible"
+            android:background="@color/colorPink"
+            android:textColor="@color/colorBright"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/petNameTextView"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+
+        <TextView
+            android:id="@+id/bioTextView"
+            android:layout_width="47dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"
+            android:text="@string/bio_title"
+            android:textColor="@color/colorTeal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/backCollapse" />
+
+        <TextView
+            android:id="@+id/petBioTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/profile_background"
+            android:text="@string/bio_hint"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:textColor="@color/colorTeal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bioTextView"
+            app:layout_constraintTop_toTopOf="@+id/bioTextView" />
+
+        <Button
+            android:id="@+id/backCollapse"
+            android:layout_width="131dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/backToRecView"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:background="@color/colorTeal"
+            android:textColor="@color/colorBright"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/petNameTextView" />
+
+        <TextView
+            android:id="@+id/petContactTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/profile_background"
+            android:text="@string/contactInfoBio"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:textColor="@color/colorTeal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/contactTextView"
+            app:layout_constraintTop_toTopOf="@+id/contactTextView" />
+
+
+        <TextView
+            android:id="@+id/contactTextView"
+            android:layout_width="93dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/contactThatBoi"
+            android:visibility="gone"
+            android:textColor="@color/colorTeal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/petBioTextView" />
+
+        <TextView
+            android:id="@+id/petTypeView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/profile_background"
+            android:text="@string/pettype"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:textColor="@color/colorTeal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/typeView"
+            app:layout_constraintTop_toTopOf="@+id/typeView" />
+
+        <TextView
+            android:id="@+id/typeView"
+            android:layout_width="59dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/type"
+            android:visibility="gone"
+            android:textColor="@color/colorTeal"
+            app:layout_constraintEnd_toStartOf="@+id/petTypeView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/petContactTextView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

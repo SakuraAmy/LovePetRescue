@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorTeal</item>
+        <item name="colorPrimaryDark">@color/colorTealDark</item>
+        <item name="colorAccent">@color/colorHotPink</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="landing_button">
+        <item name="android:background">@color/colorTeal</item>
+        <item name="android:textColor">@color/colorBright</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="form_label">
+        <item name="android:textColor">@color/colorTeal</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="form_label_placeholder">
+        <item name="android:textColor">@color/colorTeal</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="form_error">
+        <item name="android:textColor">@color/errorMsg</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="littleGreyText">
+        <item name="android:textColor">@color/colorGrey</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="littleGreenText">
+        <item name="android:textColor">@color/colorTeal</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="validate_button">
+        <item name="android:background">@color/colorHotPink</item>
+        <item name="android:textColor">@color/colorBright</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="bio_style"></style>
+
+</resources>

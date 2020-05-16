@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLightPink"
+        tools:context=".MainActivity">
+
+
+        <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="131dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="130dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/petlogo"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+<!--        <com.beardedhen.androidbootstrap.AwesomeTextView-->
+<!--            android:id="@+id/textView"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="32dp"-->
+<!--            android:layout_marginEnd="32dp"-->
+<!--            android:text="@string/text_zip_code"-->
+<!--            android:textSize="7pt"-->
+<!--            app:bootstrapBrand="regular"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/editZipCode"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/logo_image"-->
+<!--            app:layout_constraintVertical_bias="0.476" />-->
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/text_zip_code"
+            android:textAlignment="center"
+            android:textSize="10pt"
+            app:layout_constraintBottom_toTopOf="@+id/editZipCode"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo_image"
+            app:layout_constraintVertical_bias="0.476" />
+
+<!--                <com.beardedhen.androidbootstrap.BootstrapEditText-->
+<!--                    android:id="@+id/editZipCode"-->
+<!--                    android:layout_width="170dp"-->
+<!--                    android:layout_height="60dp"-->
+<!--                    android:layout_marginStart="130dp"-->
+<!--                    android:layout_marginTop="22dp"-->
+<!--                    android:layout_marginEnd="130dp"-->
+<!--                    android:background="@drawable/border"-->
+<!--                    android:ems="10"-->
+<!--                    android:hint="@string/enter_zip_code"-->
+<!--                    android:inputType="number"-->
+<!--                    android:maxLength="5"-->
+<!--                    android:textColorHint="#000000"-->
+<!--                    app:bootstrapBrand="info"-->
+<!--                    app:bootstrapSize="lg"-->
+<!--                    app:layout_constraintBottom_toTopOf="@+id/adopt_page_button"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/logo_image"-->
+<!--                    app:showOutline="true" />-->
+        <EditText
+            android:id="@+id/editZipCode"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="130dp"
+            android:background="@drawable/border"
+            android:backgroundTint="@color/colorBright"
+            android:ems="10"
+            android:hint="@string/enter_zip_code"
+            android:inputType="number"
+            android:maxLength="5"
+            android:textAlignment="center"
+            android:textColorHint="#000000"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/adopt_page_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo_image"
+            app:showOutline="true" />
+
+<!--                        <com.beardedhen.androidbootstrap.BootstrapButton-->
+<!--                            android:id="@+id/adopt_page_button"-->
+<!--                            android:layout_width="142dp"-->
+<!--                            android:layout_height="48dp"-->
+<!--                            android:layout_marginStart="130dp"-->
+<!--                            android:layout_marginEnd="130dp"-->
+<!--                            android:text="@string/adopt_page_button"-->
+<!--                            app:bootstrapBrand="primary"-->
+<!--                            app:bootstrapSize="lg"-->
+<!--                            app:buttonMode="regular"-->
+<!--                            app:layout_constraintBottom_toTopOf="@+id/find_home_button"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintHorizontal_bias="0.555"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toBottomOf="@+id/editZipCode"-->
+<!--                            app:roundedCorners="true"-->
+<!--                            app:showOutline="false" />-->
+
+        <Button
+            android:id="@+id/adopt_page_button"
+            android:layout_width="142dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="130dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorPink"
+            android:text="@string/adopt_page_button"
+            android:textSize="16dp"
+            app:buttonMode="regular"
+            app:layout_constraintBottom_toTopOf="@+id/find_home_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editZipCode"
+            app:roundedCorners="true" />
+
+        <Button
+            android:id="@+id/find_home_button"
+            android:layout_width="142dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="130dp"
+            android:layout_marginBottom="100dp"
+            android:background="@color/colorTeal"
+            android:text="@string/offer_up_page"
+            android:textColor="@color/colorBright"
+            android:textSize="16dp"
+            app:buttonMode="regular"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/adopt_page_button"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+
+<!--                        <com.beardedhen.androidbootstrap.BootstrapButton-->
+<!--                            android:id="@+id/find_home_button"-->
+<!--                            android:layout_width="142dp"-->
+<!--                            android:layout_height="48dp"-->
+<!--                            android:layout_marginStart="130dp"-->
+<!--                            android:layout_marginEnd="130dp"-->
+<!--                            android:layout_marginBottom="100dp"-->
+<!--                            android:text="@string/offer_up_page"-->
+<!--                            app:bootstrapBrand="info"-->
+<!--                            app:bootstrapSize="lg"-->
+<!--                            app:buttonMode="regular"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintHorizontal_bias="0.545"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toBottomOf="@+id/adopt_page_button"-->
+<!--                            app:roundedCorners="true"-->
+<!--                            app:showOutline="false" />-->
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </layout>

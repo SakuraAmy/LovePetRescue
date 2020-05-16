@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLightPink">
+
+            <Button
+                android:id="@+id/backToHomeButoon"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorTeal"
+                android:text="@string/backHomeButton"
+                android:textColor="@color/colorBright"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:roundedCorners="true"
+                app:showOutline="false" />
+
+            <ImageView
+                android:id="@+id/pet_picture"
+                android:layout_width="151dp"
+                android:layout_height="153dp"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="5dp"
+                android:contentDescription="@string/pet_picture_cd"
+                app:layout_constraintBottom_toTopOf="@+id/take_Photo"
+                app:layout_constraintEnd_toStartOf="@+id/petNameEdit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/pet_picture" />
+
+            <Button
+                android:id="@+id/take_Photo"
+                android:layout_width="161dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorTeal"
+                android:text="@string/takePhotoHint"
+                android:textColor="@color/colorBright"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/bio_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pet_picture"
+                app:roundedCorners="true"
+                app:showOutline="false" />
+
+            <TextView
+                android:id="@+id/bio_name"
+                android:layout_width="125dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="80dp"
+                android:fontFamily="@font/galada"
+                android:text="@string/bio_name"
+                android:textColor="@color/colorTeal"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/petNameEdit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/pet_picture"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/petNameEdit"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginEnd="45dp"
+                android:ems="10"
+                android:hint="@string/petNameHint"
+                android:importantForAutofill="yes"
+                android:inputType="textPersonName"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pet_picture"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/pet_type"
+                android:layout_width="183dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="24dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                app:layout_constraintBottom_toTopOf="@+id/take_Photo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pet_picture"
+                app:layout_constraintTop_toBottomOf="@+id/petNameEdit"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/bio_title"
+                style="@style/bio_style"
+                android:layout_width="136dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="251dp"
+                android:text="@string/bio_title"
+                android:textColor="@color/colorTeal"
+                android:fontFamily="@font/galada"
+                android:textAlignment="textStart"
+                android:textSize="24sp"
+                app:bootstrapBrand="primary"
+                app:layout_constraintBottom_toTopOf="@+id/petBioEdit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/take_Photo" />
+
+            <EditText
+                android:id="@+id/petBioEdit"
+                android:layout_width="match_parent"
+                android:layout_height="91dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint="@string/bio_hint"
+                android:inputType="textPersonName"
+                android:background="@color/colorBright"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/contact_info_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bio_title" />
+
+            <TextView
+                android:id="@+id/contact_info_title"
+                android:layout_width="136dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="251dp"
+                android:layout_marginBottom="8dp"
+                android:textAlignment="textStart"
+                android:text="@string/contact_info_title"
+                android:textColor="@color/colorTeal"
+                android:fontFamily="@font/galada"
+                app:layout_constraintBottom_toTopOf="@+id/ownerEmail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/petBioEdit" />
+
+            <EditText
+                android:id="@+id/ownerEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="25dp"
+                android:ems="10"
+                android:hint="@string/emaiHint"
+                android:importantForAutofill="yes"
+                android:inputType="textEmailAddress"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/contact_info_title" />
+
+            <EditText
+                android:id="@+id/ownerNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="25dp"
+                android:ems="10"
+                android:hint="@string/phoneHint"
+                android:inputType="phone"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ownerEmail" />
+
+            <EditText
+                android:id="@+id/ownerZip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="25dp"
+                android:ems="10"
+                android:hint="@string/zipHint"
+                android:importantForAutofill="yes"
+                android:inputType="textPostalAddress"
+                android:lineSpacingExtra="18sp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ownerNumber" />
+
+            <Button
+                android:id="@+id/submit_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="276dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/submit"
+                android:textColor="@color/colorBright"
+                android:textSize="18sp"
+                android:background="@color/colorTeal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ownerZip"
+                app:roundedCorners="true"
+                app:showOutline="false" />
+
+            <TextView
+                android:id="@+id/erroMessage"
+                android:layout_width="231dp"
+                android:layout_height="82dp"
+                android:textColor="@color/errorMsg"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/submit_bt"
+                app:layout_constraintTop_toTopOf="@+id/submit_bt" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</layout>

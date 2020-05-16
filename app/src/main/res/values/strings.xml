@@ -1,0 +1,62 @@
+<resources>
+    <string name="pet_name" />
+
+    <string name="signup_fullname">Full name</string>
+    <string name="signup_fullname_placeholder">Amina Mahmood</string>
+    <string name="signup_email_adress">Email address</string>
+    <string name="signup_email_adress_placeholder">amina@gmail.com</string>
+    <string name="signup_password">Password</string>
+    <string name="signup_password_confirmation">Confirm password</string>
+    <string name="signup_create_account_button">Create account</string>
+    <string name="signup_already_have_account">Do you have an account?</string>
+    <string name="signup_already_have_account_login">Login In</string>
+    <string name="signup_no_name">Name Empty</string>
+    <string name="signup_no_password">Password Empty</string>
+    <string name="signup_no_email">Email Empty</string>
+    <string name="login_email_adress">Email address</string>
+    <string name="login_email_adress_placeholder">amina@gmail.com</string>
+    <string name="login_password">Password</string>
+    <string name="login_password_placeholder">password</string>
+    <string name="login_create_account_button">Login In</string>
+    <string name="login_create_account_text">New to Pet love account?</string>
+    <string name="login_create_account_click">Create an account</string>
+    <string name="login_no_email">Email Empty</string>
+    <string name="login_no_password">Password Empty</string>
+    <string name="alert_dialog_validation_fun">Woops, got it!</string>
+
+    <string name="pet_picture_cd">Your pet\'s picture</string>
+    <string name="bio_name">Name</string>
+    <string name="bio_title">Bio</string>
+    <string name="bio_hint">Write Your Pet Bio Here</string>
+    <string name="contact_info_title">Contact Info</string>
+
+
+    <string name="app_name">Love Pet Rescue</string>
+    <string name="logo" />
+    <string name="backToRecView">Back</string>
+    <string name="text_zip_code">Do you want to check adopt a pet? Please enter Zip Code</string>
+    <string name="enter_zip_code">Enter Zip Code</string>
+    <string name="adopt_page_button">Adopt Me</string>
+    <string name="offer_up_page">Drop me off</string>
+    <string name="namePlaceHolder">Missy Doggy</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="backHomeButton">Home</string>
+    <string name="pettype">Pet Type</string>
+    <string name="adoptThatBoi">More Info</string>
+    <string name="contentResPet">image of pet</string>
+
+    <string name="contactThatBoi">Contact</string>
+    <string name="petContact">Write Your Contact Info Here</string>
+    <string name="type">Type</string>
+
+    <string name="petType">Write Your Pet Type Here</string>
+    <string name="emaiHint">Email</string>
+    <string name="phoneHint">Phone Number</string>
+    <string name="zipHint">ZIP Code</string>
+    <string name="takePhotoHint">Take Photo</string>
+    <string name="petNameHint">Pet\'s Name</string>
+    <string name="submit">Submit</string>
+    <string name="contactInfoBio">Contact Info Displayed Here</string>
+
+
+</resources>
